@@ -1,13 +1,5 @@
 pipeline {
     agent any
-    tools {
-       nodejs "nodejs"
-    }
-    environment {
-        NODEJS_HOME = tool name: 'NodeJS 18', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
-        PATH = "${NODEJS_HOME}/bin:${env.PATH}"
-    }
-
     stages {
         stage('Checkout') {
             steps {
