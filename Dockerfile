@@ -10,11 +10,14 @@ USER jenkins
 # Directorio de trabajo predeterminado
 WORKDIR /home/app
 
+# Copiar los archivos de dependencias
+COPY package.json package-lock.json ./
+
 # Añadir cualquier dependencia adicional que puedas necesitar
-RUN npm install --frozen-lockfile
+RUN npm ci
 
 # Compilar la aplicación (si es necesario)
-RUN npm build
+RUN npm run build
 
 # Comando por defecto para iniciar la app
 CMD ["npm", "start"]
