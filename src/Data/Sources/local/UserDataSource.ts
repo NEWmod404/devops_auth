@@ -36,6 +36,14 @@ let users: User[] = [
     nombre: 'Charlie',
     apellido: 'Brown',
   },
+   {
+    id: '6',
+    username: 'GianCh',
+    contra: '123456',
+    nombre: 'Giancarlo',
+    apellido: 'Chura',
+  },
+  
 ];
 
 export const getUsuarios = () => users;
