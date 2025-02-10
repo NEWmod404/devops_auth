@@ -3,6 +3,9 @@ pipeline {
     tools {
         nodejs 'NodeJS 18'   
     }
+    triggers {
+        githubPush()
+    }
     stages {
         stage('Checkout') {
             steps {
