@@ -39,7 +39,7 @@ let users: User[] = [
    {
     id: '6',
     username: 'GianCh',
-    contra: '123456',
+    contra: '123456789',
     nombre: 'Giancarlo',
     apellido: 'Chura',
   },
